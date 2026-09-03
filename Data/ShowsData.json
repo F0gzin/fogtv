@@ -1,0 +1,186 @@
+{
+    "go_toubun_no_hanayome":{
+        "display_name":"Go-Tōbun no Hanayome",
+        "type":"series",
+        "seasons":[
+            {
+                "episodes":[
+                    {
+                        "name":null,
+                        "cover":null,
+                        "host_type":"googledrive",
+                        "url_embed":"https://drive.google.com/file/d/1fjA8K8fJ0LxznytNoYx03OBUTwA8I9uv/preview"
+                    },
+                    {
+                        "name":null,
+                        "cover":null,
+                        "host_type":"googledrive",
+                        "url_embed":"https://drive.google.com/file/d/1gRJu9wx3xxS04H412-aqPLXKk9i9lNDj/preview"
+                    },
+                    {
+                        "name":null,
+                        "cover":null,
+                        "host_type":"googledrive",
+                        "url_embed":"https://drive.google.com/file/d/1MvDQJLiWzW82TxbbYUtM18xPddG4oogI/preview"
+                    },
+                    {
+                        "name":null,
+                        "cover":null,
+                        "host_type":"googledrive",
+                        "url_embed":"https://drive.google.com/file/d/1eYDrkz__9GKtQxMA7yR6gaOaFE-nLR-b/preview"
+                    },
+                    {
+                        "name":null,
+                        "cover":null,
+                        "host_type":"googledrive",
+                        "url_embed":"https://drive.google.com/file/d/1Smemgl8htBbPs8wQkgsYoNJ7YXjJl491/preview"
+                    }
+                ]
+            },
+            {
+                "episodes":[]
+            }
+        ]
+    },
+    "azumanga_daioh":{
+        "display_name":"Azumanga Daioh",
+        "type":"series",
+        "seasons":[
+            {
+                "episodes":[
+                    {
+                        "name":"Azumanga Daioh",
+                        "host_type":"youtube",
+                        "url_embed":"https://www.youtube.com/embed/ZxTz5fQg6MA?si=ZtO010qyLsBeI2P7"
+                    },
+                    {
+                        "name":"Dia da Osaka",
+                        "host_type":"youtube",
+                        "url_embed":"https://www.youtube.com/embed/9dnxCA4wbz0?si=thbEFQyrB7GlWJs0"
+                    },
+                    {
+                        "name":"Nyamo",
+                        "host_type":"youtube",
+                        "url_embed":"https://www.youtube.com/embed/UczVXr86v5Y?si=WHYyiKXZpXaOB5_U"
+                    },
+                    {
+                        "name":"Piscina! Piscina! Piscina!",
+                        "host_type":"youtube",
+                        "url_embed":"https://www.youtube.com/embed/xiFNEU31KnM?si=0aqdi6myW2K00g9Q"
+                    },
+                    {
+                        "name":"Férias de verão",
+                        "host_type":"youtube",
+                        "url_embed":"https://www.youtube.com/embed/HpFCkiFRil4"
+                    },
+                    {
+                        "name":"Festival de Esportes",
+                        "host_type":"youtube",
+                        "url_embed":"https://www.youtube.com/embed/qpT__zNRaMM"
+                    },
+                    {
+                        "name":"Festival Cultural",
+                        "host_type":"youtube",
+                        "url_embed":"https://www.youtube.com/embed/IztoiFl0bY8"
+                    },
+                    {
+                        "name":"Especial Sonhos de Ano Novo",
+                        "host_type":"youtube",
+                        "url_embed":"https://www.youtube.com/embed/wsshOwM23CM"
+                    },
+                    {
+                        "name":"Sakaki-san",
+                        "host_type":"youtube",
+                        "url_embed":"https://www.youtube.com/embed/XD4EeAIG8cA"
+                    },
+                    {
+                        "name":"Nós Somos Estudantes do Segundo Ano!",
+                        "host_type":"youtube",
+                        "url_embed":"https://www.youtube.com/embed/Gawhlr-BEX0"
+                    },
+                    {
+                        "name":"Kagura e Sakaki",
+                        "host_type":"youtube",
+                        "url_embed":"https://www.youtube.com/embed/WheexQwYp8A"
+                    },
+                    {
+                        "name":"Dia da Chyio-chan",
+                        "host_type":"youtube",
+                        "url_embed":"https://www.youtube.com/embed/QGwa9DYj-W4"
+                    },
+                    {
+                        "name":"Provas",
+                        "host_type":"youtube",
+                        "url_embed":"https://www.youtube.com/embed/btTPO7mpojg"
+                    },
+                    {
+                        "name":"O Mar, Quimonos e Festa",
+                        "host_type":"youtube",
+                        "url_embed":"https://www.youtube.com/embed/8fZdnicfin8"
+                    },
+                    {
+                        "name":"Festival de Esportes do Segundo Ano",
+                        "host_type":"youtube",
+                        "url_embed":"https://www.youtube.com/embed/13DlBFWFGhI"
+                    },
+                    {
+                        "name":"Festival Cultural do Segundo Ano ",
+                        "host_type":"youtube",
+                        "url_embed":"https://www.youtube.com/embed/R3Eg2b1o47k"
+                    },
+                    {
+                        "name":"Fim do Segundo Semestre e Natal",
+                        "host_type":"youtube",
+                        "url_embed":"https://www.youtube.com/embed/QkXuPoT63u4"
+                    },
+                    {
+                        "name":"Provações da Koyomi",
+                        "host_type":"youtube",
+                        "url_embed":"https://www.youtube.com/embed/GLYUUcbMJjw"
+                    },
+                    {
+                        "name":"Uma Noite de Primavera",
+                        "host_type":"youtube",
+                        "url_embed":"https://www.youtube.com/embed/ZoYRQZe_9CQ"
+                    },
+                    {
+                        "name":"Terceiro Ano",
+                        "host_type":"youtube",
+                        "url_embed":"https://www.youtube.com/embed/ruGmuXFd3tg"
+                    },
+                    {
+                        "name":"Excursão Escolar",
+                        "host_type":"youtube",
+                        "url_embed":"https://www.youtube.com/embed/lFtxZiC9zqo"
+                    },
+                    {
+                        "name":"Estudos Para os Exames de Admissão",
+                        "host_type":"youtube",
+                        "url_embed":"https://www.youtube.com/embed/bh17rabD19Y"
+                    },
+                    {
+                        "name":"Último Festival de Esportes",
+                        "host_type":"youtube",
+                        "url_embed":"https://www.youtube.com/embed/T5Dtw2C_UYQ"
+                    },
+                    {
+                        "name":"Yamamayaa",
+                        "host_type":"youtube",
+                        "url_embed":"https://www.youtube.com/embed/YGzhf6a0We0"
+                    },
+                    {
+                        "name":"Em Frente: Os Exames de Admissão!",
+                        "host_type":"youtube",
+                        "url_embed":"https://www.youtube.com/embed/bEgOiWSDGWQ"
+                    },
+                    {
+                        "name":"Fim.",
+                        "host_type":"youtube",
+                        "url_embed":"https://www.youtube.com/embed/TrYXK3R9Vos"
+                    }
+                    
+                ]
+            }
+        ]
+    }
+}

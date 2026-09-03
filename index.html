@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="https://pt.wikipedia.org/static/favicon/wikipedia.ico">
+        <meta name="description" content="Free animes and shit">
+        <title>FogTV</title>
+    </head>
+    <body>
+        <main style="height: 100%;">
+            <div class="ContentCenter">
+                <a href=".">
+                    <img draggable="false" id="LogoImg" src="./Assets/FogTV.png" alt="FogTV logo">
+                </a>
+                <div>
+                    <span>
+                        <input type="search" id="SearchBar"></input>
+                        <button title="Search it!">🔍</button>
+                    </span>
+                </div>
+            </div>
+            <hr>
+            <br>
+            <div class="ContentCenter" id="MainContentDiv">
+                <div class="ShowButtonA">
+                    <div class="ShowButtonB">
+                        <div class="ShowButtonC">
+                            <img class="ShowButtonCover" src="./Assets/ShowsCover/go_toubun_no_hanayome.jpg"><br>
+                            <div class="ShowButtonInfoDiv">
+                                <p class="ShowTitleText">Go-Tōbun no Hanayome</p>
+                                <span>Jan. 11, 2019</span>
+                                <p class="ShowDescriptionText">
+                                    Futaro Uesugi, um estudante do segundo ano do colegial que vem de uma família pobre, recebe uma irrecusável proposta para trabalhar como tutor… e descobre que suas alunas são suas colegas de classe! E pra piorar, são gêmeas quíntuplas… Todas lindíssimas, mas com péssimas notas e um ódio mortal pelos estudos! Sua primeira missão será ganhar a confiança das garotas?! Todo dia é dia de festa nesta comédia romântica 500% adorável envolvendo as irmãs gêmeas da casa das Irmãs Nakano!
+                                </p>
+                                <hr>
+                                <b>Tags:</b>
+                                <div>
+                                    [Comedy, School, Harem, Romance]
+                                </div>
+                                <a href="./watch?s=go_toubun_no_hanayome&e=%24first">
+                                    <button class="ShowButtonWatch">
+                                        <span>Assistir</span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ShowButtonA">
+                    <div class="ShowButtonB">
+                        <div class="ShowButtonC">
+                            <img class="ShowButtonCover" src="./Assets/ShowsCover/azumanga_daioh.jpg"><br>
+                            <div class="ShowButtonInfoDiv">
+                                <p class="ShowTitleText">Azumanga Daioh (ADs)</p>
+                                <span>Abr. 08, 2002</span>
+                                <p class="ShowDescriptionText">
+                                    Ten year old child prodigy, Chiyo Mihama, is finding it tough fitting in at high school with the girls five years her elder: Osaka, Tomo, Kagura, Yomi, and Sakaki. Together with teacher, they navigate the rough waters and fun times of high school.
+                                </p>
+                                <hr>
+                                <b>Tags:</b>
+                                <div>
+                                    [Comedy, School]
+                                </div>
+                                <a href="./watch?s=azumanga_daioh&e=%24first">
+                                    <button class="ShowButtonWatch">
+                                        <span>Assistir</span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+
+        <style>
+            body{
+                display: block;
+                background-color: #040316;
+                display: block;
+                color: azure;
+                font-family: Arial, Helvetica, sans-serif;
+                height: 100vh;
+            }
+            #LogoImg{
+                width: 256px;
+            }
+            button{
+                cursor: pointer;
+            }
+            .ShowDescriptionText{
+                font-size:small;
+                text-align: left;
+            }
+            .ShowButtonWatch{
+                margin-top: 20px;
+                display: flex;
+                text-align: center;
+                font-size: large;
+                width: 40%;
+                height: 40px;
+                margin-left: auto;
+                margin-right: auto;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                background-color: rgb(54, 104, 199);
+            }
+            .ShowButtonWatch span{
+                width: 100%;
+                height: fit-content;
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+            .ShowButtonInfoDiv{
+                padding-left: 10px;
+            }
+            .ShowTitleText{
+                font-size: xx-large;
+                margin: 10px;
+            }
+            .ContentCenter{
+                display: flexbox;
+                width: 840px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #MainContentDiv{
+                display: block !important; 
+                background-color: #0e0c31;
+                overflow-y: scroll;
+                height: 100%;
+            }
+            .ShowButtonA{
+                margin-top: 10px;
+                margin-left: 20px;
+                display: inline-block;
+                width: 800px;
+                height: 450px;
+                border-radius: 12px;
+                overflow: hidden;
+                box-shadow: 0px 0px 10px rgba(255,255,255,0.4);
+            }
+            .ShowButtonB{
+                display: inline-block;
+                justify-content: baseline;
+                background-color: #100e3d;
+                border: none;
+                height: 100%;
+                width: 100%;
+            }
+            .ShowButtonC{
+                display: flex;
+                justify-content: baseline;
+                width: 100%;
+                height: 100%;
+                color: azure;
+            }
+            .ShowButtonCover{
+                display: block;
+                border-radius: 5px;
+                margin-left: 5px;
+                height: 95%;
+                margin-top: 10px;
+            }
+        </style>
+
+        <script type="text/javascript">
+        </script>
+    </body>
+</html>

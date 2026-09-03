@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="https://pt.wikipedia.org/static/favicon/wikipedia.ico">
+        <meta name="description" content="Free animes and shit">
+        <title>FogTV</title>
+    </head>
+    <body>
+        <div class="ContentCenterParent">
+            <div class="ContentCenter">
+                <a href="../">
+                    <img draggable="false" id="LogoImg" src="../Assets/FogTV.png" alt="FogTV logo">
+                </a>
+                <div>
+                    <span>
+                        <input type="search" id="SearchBar"></input>
+                        <button title="Search it!">🔍</button>
+                    </span>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <main>
+            
+            <div id="LeftArea">
+                <a class="AdvertContainer" href=".">
+                    <img class="AdvertImg" alt="ADVERTISEMENT" src="../Assets/Images/AdTemplate.png">
+                </a>
+            </div>
+
+            <div id="MiddleArea">
+                <div id="PlayerArea">
+                    <div id="PlayerAreaCenter">
+                        <div id="PlayerContainer">
+                            <div id="PlayerVideoParent">
+                                <div id="PlayerVideo" style="width: 840px; height: 480px;">
+                                    <div style="height: 100%; display: flex;">
+                                        <img draggable="false" style="user-select: none; -webkit-user-drag: none; pointer-events: none; width: 10%; display: flex; margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: auto;" alt="[LOADING]" src="../Assets/Images/Spinning.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--
+                            <iframe id="PlayerVideo" src="https://drive.google.com/file/d/1fjA8K8fJ0LxznytNoYx03OBUTwA8I9uv/preview" width="840" height="480"></iframe>
+                            <video id="PlayerVideo" width="840" height="480" controls>
+                                <source src="../video_source/go_toubun_no_hanayome/1x1.mp4" type="video/mp4">
+                            </video>
+                            -->
+                            <div class="PlayerDetailA">
+                                <span id="PlayerAreaTitle"><sub>Em Busca da Casa Automática - Episódio 67</sub></span>
+                                <div class="PlayerDetailB">
+                                    <span>
+                                        Dublagem:
+                                        <select>
+                                            <option value="pt_br">PT BR</option>
+                                        </select>
+                                    </span>
+                                    <button class="HideButton FullScreenButton" title="Fullscreen"><img alt="Fullscreen" src="../Assets/Images/Icons/maximize_x24.png"></button>
+                                </div>
+                            </div>
+                            <div class="PlayerDetailC">
+                                <button class="HideButton" id="PrevEpisodeButton" title="Previous Episode">&leftarrow;</button>
+                                <button class="HideButton" id="NextEpisodeButton" title="Next Episode">&rightarrow;</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="CommentArea">
+                    <div id="CommentAreaCenter">
+                        <textarea class="CommentTextArea"></textarea><button>Post</button>
+                        <div>
+                            <div class="CommentPrimary">
+                                <div class="CommentContent">
+                                    <div style="display: flex; align-items: center;">
+                                        <img class="CommentPfp" src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/C%C3%A3o_Orelha_01.jpg/330px-C%C3%A3o_Orelha_01.jpg?utm_source=pt.wikipedia.org&utm_campaign=parser&utm_content=thumbnail">
+                                        &nbsp;Ear Dog&nbsp;<a href="../user?u=120">@orelha_oficial</a>
+                                        &nbsp;-
+                                        06/07/1945 03:99 AM
+                                    </div>
+                                    <hr>
+                                    <div>
+                                        Anime de poliéster
+                                    </div>
+                                    <br>
+                                    <hr>
+                                    <div>
+                                        <font color="red">
+                                            &downarrow; -919
+                                        </font>
+                                        <button><img src="../Assets/Images/Icons/thumbsup_x16.png">Upvote</button>
+                                        <button><img src="../Assets/Images/Icons/thumbsdown_x16.png">Downvote</button>
+                                        <button><img src="../Assets/Images/Icons/chat_x16.png" alt="reply">Reply</button>
+                                        <button><img src="../Assets/Images/Icons/report_x16.png">Report</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--
+                            <div class="CommentPrimary">
+                                <div class="CommentContent">
+                                    <div style="display: flex; align-items: center;">
+                                        <img class="CommentPfp" src="https://i.pinimg.com/474x/f3/6b/fa/f36bfa3b60559e7da0014f91250abf66.jpg">
+                                        &nbsp;Hidden&nbsp;<a href="../user?u=120">@hiddenmax2554</a>
+                                        &nbsp;-
+                                        04/12/2019 12:20 AM
+                                    </div>
+                                    <hr>
+                                    <div>
+                                        Era smash na Yotsuba de todos os lados
+                                    </div>
+                                    <br>
+                                    <hr>
+                                    <div>
+                                        <font color="white">
+                                            &bull; 0
+                                        </font>
+                                        <button><img src="../Assets/Images/Icons/thumbsup_x16.png">Upvote</button>
+                                        <button><img src="../Assets/Images/Icons/thumbsdown_x16.png">Downvote</button>
+                                        <button><img src="../Assets/Images/Icons/chat_x16.png" alt="reply">Reply</button>
+                                        <button><img src="../Assets/Images/Icons/report_x16.png">Report</button>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="CommentPrimary">
+                                <div class="CommentContent">
+                                    <div style="display: flex; align-items: center;">
+                                        <img class="CommentPfp" src="https://preview.redd.it/what-is-nino-nakano-thinking-let-your-imaginations-run-v0-o10frgof0wcc1.jpeg?width=1080&crop=smart&auto=webp&s=2266033bf7067903ca8dd16ce03070089c8790bd">
+                                        &nbsp;Fog&nbsp;<a href="../user?u=120">@fog</a>
+                                        &nbsp;-
+                                        01/01/1970 00:00 AM
+                                    </div>
+                                    <hr>
+                                    <div>
+                                        amo a Nino &lt;3
+                                    </div>
+                                    <br>
+                                    <hr>
+                                    <div>
+                                        <font color="green">
+                                            &uparrow; 1
+                                        </font>
+                                        <button><img src="../Assets/Images/Icons/thumbsup_x16.png">Upvote</button>
+                                        <button><img src="../Assets/Images/Icons/thumbsdown_x16.png">Downvote</button>
+                                        <button><img src="../Assets/Images/Icons/chat_x16.png" alt="reply">Reply</button>
+                                        <button><img src="../Assets/Images/Icons/report_x16.png">Report</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="CommentPrimary">
+                                <div class="CommentContent">
+                                    <div style="display: flex; align-items: center;">
+                                        <img class="CommentPfp" src="https://cdn.rafled.com/anime-icons/images/6f5e47ece003fd8fbe793fb2ab551a468cddc033fd30a58cb5933c5dca4e6441.jpg">
+                                        &nbsp;Ketamina&nbsp;<a href="../user?u=120">@zyedesu</a>
+                                        &nbsp;-
+                                        02/04/1203 B.C 02:69 PM
+                                    </div>
+                                    <hr>
+                                    <div>
+                                        coloquei o fone da miku no dih
+                                    </div>
+                                    <br>
+                                    <hr>
+                                    <div>
+                                        <font color="green">
+                                            &uparrow; 9
+                                        </font>
+                                        <button><img src="../Assets/Images/Icons/thumbsup_x16.png">Upvote</button>
+                                        <button><img src="../Assets/Images/Icons/thumbsdown_x16.png">Downvote</button>
+                                        <button><img src="../Assets/Images/Icons/chat_x16.png" alt="reply">Reply</button>
+                                        <button><img src="../Assets/Images/Icons/report_x16.png">Report</button>
+                                    </div>
+                                </div>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="RightArea">
+                <div id="EpisodesContainerA">
+                    <!--<h3>Episodes:</h3>-->
+                    <div id="EpisodesContainerB">
+                        <div id="EpisodesListA">
+                            <!--EPISODES_BUTTONS_HERE-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <style>
+            body{
+                background-color: #040316;
+                display: block;
+                color: azure;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            main{
+                display: flex;
+                position: relative;
+                width: 100%;
+                height: 100%;
+            }
+            #PrevEpisodeButton{
+                margin-right: 2px;
+                width: 40%;
+                height: calc(100% - 5px);
+            }
+            #NextEpisodeButton{
+                margin-left: 2px;
+                width: 40%;
+                height: calc(100% - 5px);
+            }
+            #EpisodesListA{
+                display: block;
+            }
+            #EpisodeButtonPrimary{
+                display: inline-block;
+                position: relative;
+                padding-top: 10px;
+                width: 100%;
+                height: 80px;
+            }
+            .AdvertContainer{
+                display: flex;
+                justify-content: center;
+                position: relative;
+                width: 100%;
+                height: 100%;
+            }
+            .AdvertImg{
+                display:flex;
+                position: inherit;
+                padding-left: auto;
+                padding-right: auto;
+                width: calc(80% - 40px);
+                height: auto;
+            }
+            #EpisodeButtonDiv{
+                display: flex;
+                position: absolute;
+                background-color: #0b093a;
+                margin: 0px;
+                width: 100%;
+                height: 100%;
+                border-radius: 2px;
+                border: #100f61 solid 1px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            }
+            #EpisodeButtonDiv img{
+                display: flexbox;
+                border-radius: 4px;
+                padding-left: 10px;
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+            #EpisodesContainerA{
+                display: flexbox;
+                background-color: #0b093a;
+                width: calc(100% - 70px);
+                height: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #EpisodesContainerB{
+                display: flexbox;
+                width: calc(100% - 20px);
+                height: calc(100% - 20px);
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 10px;
+            }
+            #LeftArea{
+                display: flex;
+                position: inherit;
+                width: 100%;
+                height: 100vh;
+            }
+            #RightArea{
+                display: flex;
+                position: inherit;
+                width: 100%;
+                height: 100vh;
+            }
+            #MiddleArea{
+                display: block;
+                width: 840px;
+                height: 100%;
+            }
+            #PlayerAreaTitle{
+                display: inline-block;
+                width: 100%;
+                margin-top: 4px;
+                font-size: large;
+                font-weight: normal;
+                text-align: center;
+            }
+            .CommentTextArea{
+                width: 92%;
+                height: 18px;
+            }
+            .CommentPrimary{
+                background-color:#0b093a;
+                width: 840px;
+                display: block;
+                margin-top: 12px;
+                align-content: baseline;
+            }
+            .CommentContent{
+                padding-left: 10px;
+                padding-top: 10px;
+                width: calc(100% - 20px);
+                height: calc(100% - 20px);
+            }
+            .CommentPfp{
+                width: 32px;
+                height: 32px;
+                border-radius: 100%;
+            }
+            .ContentCenterParent{
+                display: block;
+                width: 100%;
+            }
+            .ContentCenter{
+                display: flexbox;
+                width: 840px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #PlayerVideoParent{
+                background-color: #000000;
+                box-shadow: 0px 0px 32px rgba(255,255,255,0.25);
+            }
+
+            #PlayerVideo{
+                background-color: #000000;
+            }
+
+            .PlayerDetailA{
+                display: block;
+                background-color: #0b093a;
+                border: #040316 solid;
+                border-width: 2px;
+            }
+
+            .PlayerDetailC{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                place-items: center;
+                background-color: #0b093a;
+                border: #040316 solid;
+                border-width: 2px;
+                height: 30px;
+            }
+
+            .PlayerDetailB{
+                margin-left: 10px;
+                display: flex;
+            }
+
+            #LogoImg{
+                width: 256px;
+            }
+
+            button{
+                background-color:#0b093a;
+                color: azure;
+                cursor: pointer;
+                border: #040316 solid;
+                border-radius: 4px;
+                border-width: 1px;
+            }
+
+            .HideButton{
+                background-color: #040316;
+                color: azure;
+                border: none;
+            }
+
+            .FullScreenButton{
+                position: relative;
+                margin-left: auto;
+                margin-right: 3px;
+            }
+
+            #PlayerArea{
+                width: 100%;
+                height: auto;
+            }
+            
+            #PlayerAreaCenter{
+                display: flexbox;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #CommentArea{
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+
+            #CommentAreaCenter{
+                display: flexbox;
+                width: fit-content;
+                margin-left: auto;
+                margin-right: auto;
+
+                height: 100%;
+                border: 1px solid;
+                border-color: #000000;
+            }
+        </style>
+
+        <script type="module" defer src="../Scripts/Watch.js">window.alert("This web browser cannot run HTML5 documents.");</script>
+    </body>
+</html>
