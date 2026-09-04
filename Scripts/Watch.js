@@ -4,6 +4,7 @@ const episodeParam = params["e"];
 
 const playerVideoDiv = document.getElementById("PlayerVideoParent");
 const playerVideoTitle = document.getElementById("PlayerAreaTitle");
+const fullScreenButton = document.getElementById("FullScreenButton");
 
 let seasonId;
 let episodeId;
@@ -47,6 +48,39 @@ if(thisShowData){
     document.body.remove();
 }
 
+const defaultState = playerVideoDiv.style;
+console.log(defaultState);
+function toggleFullScreen() {
+    if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen().catch(err => {
+            alert(`FULLSCREEN ERROR: ${err.message} (${err.name})`);
+        });
+        playerVideoDiv.style="position:fixed;width:100%;height:100vh;left:0px;top:0px";
+        playerVideoDiv.style.zIndex = 5;
+        body.style.overflowY = "hidden";
+    }else{
+        document.exitFullscreen();
+        //playerVideoDiv.style=defaultState;
+        //playerVideoDiv.style.height = "480px";
+        //body.style.overflowY = "scroll";
+    }
+}
+
+document.addEventListener("fullscreenchange", (e)=>{
+    if (document.fullscreenElement) {
+        console.log('entered fullscreen');
+    } else {
+        console.log('exited fullscreen');
+        playerVideoDiv.style=defaultState;
+        playerVideoDiv.style.height = "480px";
+        playerVideoDiv.style.display = "block";
+        body.style.overflowY = "scroll";
+    }
+});
+
+
+fullScreenButton.onclick = toggleFullScreen;
+
 function resolveEpisodeId(episodeStr){
     if(episodeStr === "$first" || episodeStr === "$1st" || episodeStr === undefined){
         seasonId = 0;
@@ -78,11 +112,11 @@ function loadShowEpisode(){
     let videoSourceUrl = episodeData.url_embed;
 
     if(episodeData.host_type === "youtube"){
-        playerVideoDiv.innerHTML = `<iframe width="840" height="480" src="${videoSourceUrl}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
+        playerVideoDiv.innerHTML = `<iframe width="100%" height="100%" src="${videoSourceUrl}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
     }else if(episodeData.host_type === "googledrive"){
-        playerVideoDiv.innerHTML = `<iframe id="PlayerVideo" src="${videoSourceUrl}" width="840" height="480"></iframe>`;
+        playerVideoDiv.innerHTML = `<iframe id="PlayerVideo" src="${videoSourceUrl}" width="100%" height="100%"></iframe>`;
     }else if(episodeData.host_type === "rawfile"){
-        playerVideoDiv.innerHTML = `<video id="PlayerVideo" width="840" height="480" controls><source src="${videoSourceUrl}" type="video/mp4"></video>`;
+        playerVideoDiv.innerHTML = `<video id="PlayerVideo" width="100%" height="100%" controls><source src="${videoSourceUrl}" type="video/mp4"></video>`;
     }else{
         window.alert(`Unknown host: "${episodeData.host_type}"`);
     }
@@ -107,19 +141,25 @@ function loadShowEpisodesPreview(){
 
         for(let j=0; j<thisShowData.seasons[i].episodes.length; j++){
             const newLabelA = document.createElement("div");
+            const ep = thisShowData.seasons[i].episodes[j];
             let Url = cleanURL + "?s="+showId+"&e="+`${i+1}_${j+1}`;
-            let ThumbUrl = "../Assets/ShowsThumb/"+showId+".png";
+            let ThumbUrl = "";
+            if(ep.cover){
+                ThumbUrl = ep.cover;
+            }else{
+                ThumbUrl = "../Assets/ShowsThumb/"+showId+".png";
+            }
             let processed = episodeButtonTemplate
             .replaceAll("$HREF$",Url)
             .replaceAll("$EPISODE_ID%",`${i+1} - ${j+1}`)
-            .replaceAll("$EPISODE_NAME%",thisShowData.seasons[i].episodes[j].name || "Ep") 
+            .replaceAll("$EPISODE_NAME%",ep.name || "Ep") 
             .replaceAll("$EPISODE_INFO%","Jan. 1st 1970")
             .replaceAll("$THUMBNAIL_URL$",ThumbUrl);
 
             if(i === seasonId && j === episodeId){
-                processed = processed.replaceAll("$STYLE$","background-color: #1f3ea7;");
+                processed = processed.replaceAll("$STYLE$","background-color: #1f3ea7; width:100%; height:100%;");
             }else{
-                processed = processed.replaceAll("$STYLE$","");
+                processed = processed.replaceAll("$STYLE$","width:100%; height:100%;");
             }
             
             newLabelA.innerHTML = processed;

@@ -7,37 +7,87 @@
                 "episodes":[
                     {
                         "name":null,
-                        "cover":null,
+                        "cover":"../Assets/ShowsThumb/go_toubun_no_hanayome/1_1.jpg",
                         "host_type":"googledrive",
                         "url_embed":"https://drive.google.com/file/d/1fjA8K8fJ0LxznytNoYx03OBUTwA8I9uv/preview"
                     },
                     {
                         "name":null,
-                        "cover":null,
+                        "cover":"../Assets/ShowsThumb/go_toubun_no_hanayome/1_2.jpg",
                         "host_type":"googledrive",
                         "url_embed":"https://drive.google.com/file/d/1gRJu9wx3xxS04H412-aqPLXKk9i9lNDj/preview"
                     },
                     {
                         "name":null,
-                        "cover":null,
+                        "cover":"../Assets/ShowsThumb/go_toubun_no_hanayome/1_3.jpg",
                         "host_type":"googledrive",
                         "url_embed":"https://drive.google.com/file/d/1MvDQJLiWzW82TxbbYUtM18xPddG4oogI/preview"
                     },
                     {
                         "name":null,
-                        "cover":null,
+                        "cover":"../Assets/ShowsThumb/go_toubun_no_hanayome/1_4.jpg",
                         "host_type":"googledrive",
                         "url_embed":"https://drive.google.com/file/d/1eYDrkz__9GKtQxMA7yR6gaOaFE-nLR-b/preview"
                     },
                     {
                         "name":null,
-                        "cover":null,
+                        "cover":"../Assets/ShowsThumb/go_toubun_no_hanayome/1_5.jpg",
                         "host_type":"googledrive",
                         "url_embed":"https://drive.google.com/file/d/1Smemgl8htBbPs8wQkgsYoNJ7YXjJl491/preview"
+                    },
+                    {
+                        "name":null,
+                        "cover":"../Assets/ShowsThumb/go_toubun_no_hanayome/1_6.jpg",
+                        "host_type":"googledrive",
+                        "url_embed":"https://drive.google.com/file/d/1MKNaVeamqTcoH5MMIXYjMICIJPSmcTGn/preview"
+                    },
+                    {
+                        "name":null,
+                        "cover":"../Assets/ShowsThumb/go_toubun_no_hanayome/1_7.jpg",
+                        "host_type":"googledrive",
+                        "url_embed":"https://drive.google.com/file/d/10T9WwNEYuSKH5Gg6dfTOmb_0DaaPaBHO/preview"
+                    },
+                    {
+                        "name":null,
+                        "cover":"../Assets/ShowsThumb/go_toubun_no_hanayome/1_8.jpg",
+                        "host_type":"googledrive",
+                        "url_embed":"https://drive.google.com/file/d/1MDYBwLwNTi2FcSSLLBFFA-H7GTo1ILDE/preview"
+                    },
+                    {
+                        "name":null,
+                        "cover":"../Assets/ShowsThumb/go_toubun_no_hanayome/1_9.jpg",
+                        "host_type":"googledrive",
+                        "url_embed":"https://drive.google.com/file/d/14R94CvYUZr3Tr12YXM1iLPKCJqI9Lu1o/preview"
+                    },
+                    {
+                        "name":null,
+                        "cover":"../Assets/ShowsThumb/go_toubun_no_hanayome/1_10.jpg",
+                        "host_type":"googledrive",
+                        "url_embed":"https://drive.google.com/file/d/1kbek8UgH870Lk77HtY_j9pXJz3_bMslm/preview"
+                    },
+                    {
+                        "name":null,
+                        "cover":"../Assets/ShowsThumb/go_toubun_no_hanayome/1_11.jpg",
+                        "host_type":"googledrive",
+                        "url_embed":"https://drive.google.com/file/d/1lB7ZQZyr4CdN7fhLSzmA3hPKz1wQXOGc/preview"
+                    },
+                    {
+                        "name":null,
+                        "cover":"../Assets/ShowsThumb/go_toubun_no_hanayome/1_12.jpg",
+                        "host_type":"googledrive",
+                        "url_embed":"https://drive.google.com/file/d/1dGlw_3ghq8nGLl2Mj8yrqeDxwUtwimhu/preview"
                     }
                 ]
             },
             {
+                "episodes":[]
+            },
+            {
+                "type":"specials",
+                "episodes":[]
+            },
+            {
+                "type":"movie",
                 "episodes":[]
             }
         ]
