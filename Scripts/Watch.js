@@ -125,7 +125,7 @@ function loadShowEpisode(){
     if(episodeData.name){
         playerVideoTitle.innerHTML = `${thisShowData.display_name}: <i>${episodeData.name || "(episódio sem nome)"} - ${("Episódio " + String(episodeId+1))}</i>`;
     }else{
-        playerVideoTitle.innerHTML = `${thisShowData.display_name}: <i>${("Episódio " + String(episodeId+1))}</i>`;
+        playerVideoTitle.innerHTML = `${thisShowData.display_name}: <i>${("Episódio " + String(seasonId+1) + "-" + String(episodeId+1))}</i>`;
     }
     document.title = `${seasonId+1}-${episodeId+1} - ${thisShowData.display_name}`;
 }
@@ -136,12 +136,20 @@ function loadShowEpisodesPreview(){
     for(let i=0; i<thisShowData.seasons.length; i++){
         // for each season
         const newLabel = document.createElement("h3");
+        const ss = thisShowData.seasons[i];
         newLabel.innerText = `Temporada ${String(i+1)}:`;
+        
+        if(ss.type === "specials"){
+            newLabel.innerText = "Especiais:";
+        }else if(ss.type === "movie"){
+            newLabel.innerText = "Filme:";
+        }
+
         episodeListDiv.appendChild(newLabel);
 
-        for(let j=0; j<thisShowData.seasons[i].episodes.length; j++){
+        for(let j=0; j<ss.episodes.length; j++){
             const newLabelA = document.createElement("div");
-            const ep = thisShowData.seasons[i].episodes[j];
+            const ep = ss.episodes[j];
             let Url = cleanURL + "?s="+showId+"&e="+`${i+1}_${j+1}`;
             let ThumbUrl = "";
             if(ep.cover){

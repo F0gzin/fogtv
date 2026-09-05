@@ -41,6 +41,11 @@
                                     </div>
                                 </div>
                             </div>
+                            <div id="PlayerCaptionsDiv">
+                                <div id="PlayerCaptionSpanParent">
+                                    <font id="PlayerCaptionSpan" bgcolor="black" color="white">[MIKU] Lorem Ipsum Dolor Sit Amet.</font>
+                                </div>
+                            </div>
                             <!--
                             <iframe id="PlayerVideo" src="https://drive.google.com/file/d/1fjA8K8fJ0LxznytNoYx03OBUTwA8I9uv/preview" width="840" height="480"></iframe>
                             <video id="PlayerVideo" width="840" height="480" controls>
@@ -204,6 +209,20 @@
                 position: relative;
                 width: 100%;
                 height: 100%;
+            }
+            #PlayerCaptionSpanParent{
+                display: flex;
+                height: 30px;
+                align-items: center; 
+                text-align: center;
+                justify-content: center;
+                justify-items: center;
+            }
+            #PlayerCaptionSpan{
+                display: block;
+                background-color: #000000;
+                color: white;
+                width: calc(fit-content + 30px);
             }
             #PrevEpisodeButton{
                 margin-right: 2px;

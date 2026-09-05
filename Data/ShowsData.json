@@ -80,7 +80,44 @@
                 ]
             },
             {
-                "episodes":[]
+                "episodes":[
+                    {
+                        "name":null,
+                        "cover":"../Assets/ShowsThumb/go_toubun_no_hanayome/2_1.jpg",
+                        "host_type":"googledrive",
+                        "url_embed":"https://drive.google.com/file/d/1oYRxOkt3S3QZ8hlBGYNjkvtoLRvD8ndM/preview"
+                    },
+                    {
+                        "name":null,
+                        "cover":"../Assets/ShowsThumb/go_toubun_no_hanayome/2_2.jpg",
+                        "host_type":"googledrive",
+                        "url_embed":"https://drive.google.com/file/d/1ikR31tDCQqmaPN_9THbXIrr__hbsHujZ/preview"
+                    },
+                    {
+                        "name":null,
+                        "cover":"../Assets/ShowsThumb/go_toubun_no_hanayome/2_3.jpg",
+                        "host_type":"googledrive",
+                        "url_embed":"https://drive.google.com/file/d/1_eVKxA3qiEmAYJhS8BsR3XJDGfkFUiwE/preview"
+                    },
+                    {
+                        "name":null,
+                        "cover":"../Assets/ShowsThumb/go_toubun_no_hanayome/2_4.jpg",
+                        "host_type":"googledrive",
+                        "url_embed":"https://drive.google.com/file/d/1oLd1VBpFl7UB2RrKrpRmFP9hVH6gaptd/preview"
+                    },
+                    {
+                        "name":null,
+                        "cover":"../Assets/ShowsThumb/go_toubun_no_hanayome/2_5.jpg",
+                        "host_type":"googledrive",
+                        "url_embed":"https://drive.google.com/file/d/1oy5CrQWbQaZviv6EsvgIglUFF5iT7HoX/preview"
+                    },
+                    {
+                        "name":null,
+                        "cover":"../Assets/ShowsThumb/go_toubun_no_hanayome/2_6.jpg",
+                        "host_type":"googledrive",
+                        "url_embed":"https://drive.google.com/file/d/16yNlsU7ETWg2sgoX07EOxTjKg2r5C9mK/preview"
+                    }
+                ]
             },
             {
                 "type":"specials",
