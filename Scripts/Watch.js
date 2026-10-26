@@ -44,8 +44,15 @@ if(thisShowData){
     loadShowEpisode(showId);
     loadShowEpisodesPreview();
 }else{
-    window.alert(`Unknown show: "${showId}"`);
-    document.body.remove();
+    if(!showId){
+        window.alert("Invalid URL blud :(");
+        const newA = document.createElement("a");
+        newA.href="..";
+        document.body.appendChild(newA);
+        newA.click();
+    }else{
+        window.alert(`Unknown show: "${showId}"`);
+    }
 }
 
 const defaultState = playerVideoDiv.style;
@@ -117,6 +124,8 @@ function loadShowEpisode(){
         playerVideoDiv.innerHTML = `<iframe id="PlayerVideo" src="${videoSourceUrl}" width="100%" height="100%"></iframe>`;
     }else if(episodeData.host_type === "rawfile"){
         playerVideoDiv.innerHTML = `<video id="PlayerVideo" width="100%" height="100%" controls><source src="${videoSourceUrl}" type="video/mp4"></video>`;
+    }else if(episodeData.host_type === "iframe"){
+        playerVideoDiv.innerHTML = `<iframe id="PlayerVideo" src="${videoSourceUrl}" width="100%" height="100%"></iframe>`;
     }else{
         window.alert(`Unknown host: "${episodeData.host_type}"`);
     }
@@ -153,7 +162,15 @@ function loadShowEpisodesPreview(){
             let Url = cleanURL + "?s="+showId+"&e="+`${i+1}_${j+1}`;
             let ThumbUrl = "";
             if(ep.cover){
-                ThumbUrl = ep.cover;
+                if(ep.cover.slice(0,5) === "$auto"){
+                    if(ep.cover.slice(5) === "/jpg"){
+                        ThumbUrl = `../Assets/ShowsThumb/${showId}/${i+1}_${j+1}.jpg`
+                    }else{
+                        ThumbUrl = `../Assets/ShowsThumb/${showId}/${i+1}_${j+1}.png`
+                    }
+                }else{
+                    ThumbUrl = ep.cover;
+                }
             }else{
                 ThumbUrl = "../Assets/ShowsThumb/"+showId+".png";
             }
@@ -161,11 +178,11 @@ function loadShowEpisodesPreview(){
             .replaceAll("$HREF$",Url)
             .replaceAll("$EPISODE_ID%",`${i+1} - ${j+1}`)
             .replaceAll("$EPISODE_NAME%",ep.name || "Ep") 
-            .replaceAll("$EPISODE_INFO%","Jan. 1st 1970")
+            .replaceAll("$EPISODE_INFO%","[59:59]")
             .replaceAll("$THUMBNAIL_URL$",ThumbUrl);
 
             if(i === seasonId && j === episodeId){
-                processed = processed.replaceAll("$STYLE$","background-color: #1f3ea7; width:100%; height:100%;");
+                processed = processed.replaceAll("$STYLE$","background-color: var(--selected); width:100%; height:100%;");
             }else{
                 processed = processed.replaceAll("$STYLE$","width:100%; height:100%;");
             }

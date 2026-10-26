@@ -6,12 +6,13 @@
         <link rel="icon" href="https://pt.wikipedia.org/static/favicon/wikipedia.ico">
         <meta name="description" content="Free animes and shit">
         <title>FogTV</title>
+        <link rel="stylesheet" href="../Css/Watch.css">
     </head>
     <body>
-        <div class="ContentCenterParent">
-            <div class="ContentCenter">
+        <div class="ContentHeaderParent">
+            <header class="ContentHeader">
                 <a href="../">
-                    <img draggable="false" id="LogoImg" src="../Assets/FogTV.png" alt="FogTV logo">
+                    <img draggable="false" id="LogoImg" src="../Assets/FogTV.svg" alt="FogTV logo">
                 </a>
                 <div>
                     <span>
@@ -19,22 +20,24 @@
                         <button title="Search it!">🔍</button>
                     </span>
                 </div>
-            </div>
+            </header>
             <hr>
         </div>
         <main>
             
+            <!--
             <div id="LeftArea">
                 <a class="AdvertContainer" href=".">
                     <img class="AdvertImg" alt="ADVERTISEMENT" src="../Assets/Images/AdTemplate.png">
                 </a>
             </div>
+            -->
 
             <div id="MiddleArea">
                 <div id="PlayerArea">
                     <div id="PlayerAreaCenter">
                         <div id="PlayerContainer">
-                            <div id="PlayerVideoParent" style="width: 840px; height: 480px;">
+                            <div id="PlayerVideoParent">
                                 <div id="PlayerVideo" style="width: 100%; height: 100%;">
                                     <div style="height: 100%; display: flex;">
                                         <img draggable="false" style="user-select: none; -webkit-user-drag: none; pointer-events: none; width: 10%; display: flex; margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: auto;" alt="[LOADING]" src="../Assets/Images/Spinning.png">
@@ -43,7 +46,7 @@
                             </div>
                             <div id="PlayerCaptionsDiv">
                                 <div id="PlayerCaptionSpanParent">
-                                    <font id="PlayerCaptionSpan" bgcolor="black" color="white">[MIKU] Lorem Ipsum Dolor Sit Amet.</font>
+                                    <font id="PlayerCaptionSpan" bgcolor="black" color="white">[JOHN_DOE] Lorem Ipsum Dolor Sit Amet.</font>
                                 </div>
                             </div>
                             <!--
@@ -101,7 +104,6 @@
                                 </div>
                             </div>
 
-                            <!--
                             <div class="CommentPrimary">
                                 <div class="CommentContent">
                                     <div style="display: flex; align-items: center;">
@@ -180,7 +182,7 @@
                                     </div>
                                 </div>
                             </div>
-                            -->
+                           
                         </div>
                     </div>
                 </div>
@@ -197,246 +199,7 @@
             </div>
         </main>
 
-        <style>
-            body{
-                background-color: #040316;
-                display: block;
-                color: azure;
-                font-family: Arial, Helvetica, sans-serif;
-            }
-            main{
-                display: flex;
-                position: relative;
-                width: 100%;
-                height: 100%;
-            }
-            #PlayerCaptionSpanParent{
-                display: flex;
-                height: 30px;
-                align-items: center; 
-                text-align: center;
-                justify-content: center;
-                justify-items: center;
-            }
-            #PlayerCaptionSpan{
-                display: block;
-                background-color: #000000;
-                color: white;
-                width: calc(fit-content + 30px);
-            }
-            #PrevEpisodeButton{
-                margin-right: 2px;
-                width: 40%;
-                height: calc(100% - 5px);
-            }
-            #NextEpisodeButton{
-                margin-left: 2px;
-                width: 40%;
-                height: calc(100% - 5px);
-            }
-            #EpisodesListA{
-                display: block;
-            }
-            #EpisodeButtonPrimary{
-                display: inline-block;
-                position: relative;
-                padding-top: 10px;
-                width: 100%;
-                height: 80px;
-            }
-            .AdvertContainer{
-                display: flex;
-                justify-content: center;
-                position: relative;
-                width: 100%;
-                height: 100%;
-            }
-            .AdvertImg{
-                display:flex;
-                position: inherit;
-                padding-left: auto;
-                padding-right: auto;
-                width: calc(80% - 40px);
-                height: auto;
-            }
-            #EpisodeButtonDiv{
-                display: flex;
-                position: absolute;
-                background-color: #0b093a;
-                margin: 0px;
-                width: 100%;
-                height: 100%;
-                border-radius: 2px;
-                border: #100f61 solid 1px;
-                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-            }
-            #EpisodeButtonDiv img{
-                display: flexbox;
-                border-radius: 4px;
-                padding-left: 10px;
-                margin-top: auto;
-                margin-bottom: auto;
-            }
-            #EpisodesContainerA{
-                display: flexbox;
-                background-color: #0b093a;
-                width: calc(100% - 70px);
-                height: 100%;
-                margin-left: auto;
-                margin-right: auto;
-            }
-            #EpisodesContainerB{
-                display: flexbox;
-                width: calc(100% - 20px);
-                height: calc(100% - 20px);
-                margin-left: auto;
-                margin-right: auto;
-                margin-top: 10px;
-            }
-            #LeftArea{
-                display: flex;
-                position: inherit;
-                width: 100%;
-                height: 100vh;
-            }
-            #RightArea{
-                display: flex;
-                position: inherit;
-                width: 100%;
-                height: 100vh;
-            }
-            #MiddleArea{
-                display: block;
-                width: 840px;
-                height: 100%;
-            }
-            #PlayerAreaTitle{
-                display: inline-block;
-                width: 100%;
-                margin-top: 4px;
-                font-size: large;
-                font-weight: normal;
-                text-align: center;
-            }
-            .CommentTextArea{
-                width: 92%;
-                height: 18px;
-            }
-            .CommentPrimary{
-                background-color:#0b093a;
-                width: 840px;
-                display: block;
-                margin-top: 12px;
-                align-content: baseline;
-            }
-            .CommentContent{
-                padding-left: 10px;
-                padding-top: 10px;
-                width: calc(100% - 20px);
-                height: calc(100% - 20px);
-            }
-            .CommentPfp{
-                width: 32px;
-                height: 32px;
-                border-radius: 100%;
-            }
-            .ContentCenterParent{
-                display: block;
-                width: 100%;
-            }
-            .ContentCenter{
-                display: flexbox;
-                width: 840px;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            #PlayerVideoParent{
-                background-color: #000000;
-                box-shadow: 0px 0px 32px rgba(255,255,255,0.25);
-            }
-
-            #PlayerVideo{
-                background-color: #000000;
-            }
-
-            .PlayerDetailA{
-                display: block;
-                background-color: #0b093a;
-                border: #040316 solid;
-                border-width: 2px;
-            }
-
-            .PlayerDetailC{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                place-items: center;
-                background-color: #0b093a;
-                border: #040316 solid;
-                border-width: 2px;
-                height: 30px;
-            }
-
-            .PlayerDetailB{
-                margin-left: 10px;
-                display: flex;
-            }
-
-            #LogoImg{
-                width: 256px;
-            }
-
-            button{
-                background-color:#0b093a;
-                color: azure;
-                cursor: pointer;
-                border: #040316 solid;
-                border-radius: 4px;
-                border-width: 1px;
-            }
-
-            .HideButton{
-                background-color: #040316;
-                color: azure;
-                border: none;
-            }
-
-            .FullScreenButton{
-                position: relative;
-                margin-left: auto;
-                margin-right: 3px;
-            }
-
-            #PlayerArea{
-                width: 100%;
-                height: auto;
-            }
-            
-            #PlayerAreaCenter{
-                display: flexbox;
-                width: 100%;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            #CommentArea{
-                display: block;
-                width: 100%;
-                height: 100%;
-            }
-
-            #CommentAreaCenter{
-                display: flexbox;
-                width: fit-content;
-                margin-left: auto;
-                margin-right: auto;
-
-                height: 100%;
-                border: 1px solid;
-                border-color: #000000;
-            }
-        </style>
+        <style></style>
 
         <script type="module" defer src="../Scripts/Watch.js">window.alert("This web browser cannot run HTML5 documents.");</script>
     </body>

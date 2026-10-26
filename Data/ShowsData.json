@@ -116,6 +116,18 @@
                         "cover":"../Assets/ShowsThumb/go_toubun_no_hanayome/2_6.jpg",
                         "host_type":"googledrive",
                         "url_embed":"https://drive.google.com/file/d/16yNlsU7ETWg2sgoX07EOxTjKg2r5C9mK/preview"
+                    },
+                    {
+                        "name":null,
+                        "cover":"$auto/jpg",
+                        "host_type":"googledrive",
+                        "url_embed":"https://drive.google.com/file/d/1-nUSqexjwwz1ZdA4e_fAPl0AGWdPzklq/preview"
+                    },
+                    {
+                        "name":null,
+                        "cover":"$auto/jpg",
+                        "host_type":"iframe",
+                        "url_embed":"https://serv01.meusdoramas.club/#/video/846691/2/7/"
                     }
                 ]
             },
@@ -138,17 +150,20 @@
                     {
                         "name":"Azumanga Daioh",
                         "host_type":"youtube",
-                        "url_embed":"https://www.youtube.com/embed/ZxTz5fQg6MA?si=ZtO010qyLsBeI2P7"
+                        "url_embed":"https://www.youtube.com/embed/ZxTz5fQg6MA?si=ZtO010qyLsBeI2P7",
+                        "cover":"$auto"
                     },
                     {
                         "name":"Dia da Osaka",
                         "host_type":"youtube",
-                        "url_embed":"https://www.youtube.com/embed/9dnxCA4wbz0?si=thbEFQyrB7GlWJs0"
+                        "url_embed":"https://www.youtube.com/embed/9dnxCA4wbz0?si=thbEFQyrB7GlWJs0",
+                        "cover":"$auto"
                     },
                     {
                         "name":"Nyamo",
                         "host_type":"youtube",
-                        "url_embed":"https://www.youtube.com/embed/UczVXr86v5Y?si=WHYyiKXZpXaOB5_U"
+                        "url_embed":"https://www.youtube.com/embed/UczVXr86v5Y?si=WHYyiKXZpXaOB5_U",
+                        "cover":"$auto"
                     },
                     {
                         "name":"Piscina! Piscina! Piscina!",
